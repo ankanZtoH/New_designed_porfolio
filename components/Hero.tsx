@@ -69,7 +69,7 @@ const Hero = () => {
     };
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-dark pt-25 pb-20 px-4 md:px-8">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-dark pt-16 md:pt-25 pb-20 px-4 md:px-8">
             {/* Static Background Elements */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
             <div className="absolute left-0 top-0 -z-10 h-[500px] w-[500px] rounded-full bg-primary opacity-10 blur-[120px]"></div>
@@ -107,10 +107,10 @@ const Hero = () => {
                         </div>
 
                         {/* Main Content Area (Grid) */}
-                        <div className="flex flex-col md:flex-row h-full relative z-10 ">
+                        <div className="flex flex-col lg:flex-row h-full relative z-10 mb-5">
 
                             {/* Left Side: Profile (Glass Effect) */}
-                            <div className="md:w-[35%] w-full bg-white/1 backdrop-blur-md border-b md:border-b-0 md:border-r border-white/5 p-4 md:p-8 flex flex-col items-center justify-center relative overflow-hidden shrink-0 h-[40%] md:h-full">
+                            <div className="lg:w-[35%] w-full bg-white/1 backdrop-blur-md border-b lg:border-b-0 lg:border-r border-white/5 p-4 md:p-8 flex flex-col items-center justify-center relative overflow-hidden shrink-0 h-[40%] lg:h-full">
                                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-30"></div>
 
                                 <div className="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-tr from-primary to-secondary mb-0 md:mb-6 shadow-2xl shadow-primary/20 relative z-10">
@@ -123,7 +123,7 @@ const Hero = () => {
                                 {/* User said 'in the tab there have name , stream 2 times which is not making sencce' - interpreting as removing it from this left panel entirely for cleaner look, or keeping it strictly minimal */}
                                 {/* Removing text from left panel completely to let Right side handle Intro identity */}
 
-                                <div className="hidden md:grid grid-cols-2 gap-3 w-full max-w-[280px] mt-8 relative z-20">
+                                <div className="hidden lg:grid grid-cols-2 gap-3 w-full max-w-[280px] mt-8 relative z-20">
                                     <a href="#projects" onClick={(e) => handleScroll(e, '#projects')} className="bg-white/5 hover:bg-white/10 p-3 rounded-2xl flex flex-col items-center justify-center gap-2 border border-white/5 transition-all group cursor-pointer">
                                         <Code2 size={20} className="text-secondary group-hover:scale-110 transition-transform" />
                                         <span className="text-[10px] text-gray-400">Projects</span>
@@ -144,7 +144,7 @@ const Hero = () => {
                             </div>
 
                             {/* Right Side: Intro & Details */}
-                            <div className="md:w-[65%] w-full h-[60%] md:h-full p-5 md:p-8 lg:p-10 flex flex-col justify-start text-left relative overflow-hidden pt-4 md:justify-center">
+                            <div className="lg:w-[65%] w-full h-[60%] lg:h-full p-5 md:p-8 lg:p-10 flex flex-col justify-start text-left relative overflow-hidden pt-4 lg:justify-center">
                                 {/* <h3 className="text-primary text-[10px] md:text-sm font-medium mb-1 md:mb-2 tracking-wide uppercase flex items-center gap-2 opacity-80">
                                     <span className="w-4 md:w-6 h-[1px] bg-primary block"></span>
                                     Introduction
@@ -169,7 +169,8 @@ const Hero = () => {
 
                                 <div className=" w-full md:w-auto">
                                     {/* Mobile Social Links - Above Buttons */}
-                                    <div className="flex md:hidden justify-start gap-4 mb-3 relative z-20">
+                                    {/* Mobile Social Links - Above Buttons */}
+                                    <div className="flex lg:hidden justify-start gap-4 mb-3 relative z-20">
                                         <a href="https://github.com/ankanbera" target="_blank" className="p-2.5 bg-white/5 rounded-xl text-white border border-white/10 hover:bg-white/10 transition-colors cursor-pointer">
                                             <Github size={18} />
                                         </a>
@@ -186,7 +187,7 @@ const Hero = () => {
                                     </div>
 
                                     {/* Action Buttons - Cuboid/Grid on Mobile */}
-                                    <div className="grid grid-cols-2 md:flex gap-3 md:gap-3">
+                                    <div className="grid grid-cols-2 lg:flex gap-3 md:gap-3">
                                         <a
                                             href="#projects"
                                             onClick={(e) => handleScroll(e, '#projects')}
@@ -207,7 +208,7 @@ const Hero = () => {
                         </div>
 
                         {/* Interactive Home Indicator */}
-                        <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1.5 bg-white/20 rounded-full z-50"></div>
+                        <div className=" absolute bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1.5 bg-white/20 rounded-full z-50"></div>
                     </div>
 
                     {/* Glass Reflection */}
