@@ -11,7 +11,7 @@ const experienceData = [
         ],
     },
     {
-        year: '2021 - 2023',
+        year: '2021 - Present',
         role: 'Junior Developer',
         company: 'Web Innovations Co.',
         points: [

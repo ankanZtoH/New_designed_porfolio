@@ -37,7 +37,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-24 relative overflow-hidden bg-dark text-md">
+        <section id="contact" className="py-24 lg:py-12 relative overflow-hidden bg-dark text-md">
             <div className="absolute inset-0 bg-dark opacity-90 -z-10"></div>
             {/* Decorative Glow */}
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[600px] h-[400px] bg-primary/10 blur-[100px] rounded-full -z-10"></div>
@@ -53,10 +53,10 @@ const Contact = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6 md:gap-12 max-w-6xl mx-auto">
+                <div className="grid md:grid-cols-2 gap-6 md:gap-12 max-w-6xl lg:max-w-4xl mx-auto">
                     {/* Contact Info Cards */}
                     <div className="flex flex-col gap-3 md:gap-6 justify-start">
-                        <div className="p-4 md:p-6 bg-surface/30 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-primary/30 transition-all group relative">
+                        <div className="p-2 md:p-4 bg-surface/30 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-primary/30 transition-all group relative">
                             <button
                                 onClick={() => handleCopy('ankan06edu@gmail.com', 'email')}
                                 className="absolute top-4 right-4 md:top-6 md:right-6 p-2 text-gray-400 hover:text-white transition-colors"
@@ -70,14 +70,14 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="text-xs text-gray-500 mb-0.5">Email Me</p>
-                                    <a href="mailto:ankan06edu@gmail.com" className="text-lg md:text-2xl font-bold text-white hover:text-primary transition-colors">
+                                    <a href="mailto:ankan06edu@gmail.com" className="text-md md:text-md font-bold text-white hover:text-primary transition-colors">
                                         ankan06edu@gmail.com
                                     </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="p-4 md:p-6 bg-surface/30 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-primary/30 transition-all group relative">
+                        <div className="p-2 md:p-4 bg-surface/30 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-primary/30 transition-all group relative">
                             <button
                                 onClick={() => handleCopy('+917810937299', 'phone')}
                                 className="absolute top-4 right-4 md:top-6 md:right-6 p-2 text-gray-400 hover:text-white transition-colors"
@@ -91,7 +91,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="text-xs text-gray-500 mb-0.5">Call Me</p>
-                                    <a href="tel:+917810937299" className="text-lg md:text-2xl font-bold text-white hover:text-primary transition-colors">
+                                    <a href="tel:+917810937299" className="text-md md:text-md font-bold text-white hover:text-primary transition-colors">
                                         +91 78109 37299
                                     </a>
                                 </div>
@@ -100,13 +100,13 @@ const Contact = () => {
 
 
                         {/* Location Card */}
-                        <div className="p-4 md:p-6 bg-surface/30 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-primary/30 transition-all flex items-center gap-3 md:gap-4 group mt-1 md:mt-2">
+                        <div className="p-2 md:p-4 bg-surface/30 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-primary/30 transition-all flex items-center gap-3 md:gap-4 group mt-1 md:mt-2">
                             <div className="p-3 md:p-4 bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors">
                                 <MapPin className="text-primary" size={20} />
                             </div>
                             <div>
                                 <p className="text-xs text-gray-500 mb-0.5">Located In</p>
-                                <p className="text-lg md:text-2xl font-bold text-white group-hover:text-primary transition-colors">
+                                <p className="text-md md:text-md font-bold text-white group-hover:text-primary transition-colors">
                                     Belur, Howrah , 711202
                                 </p>
                             </div>
@@ -114,13 +114,13 @@ const Contact = () => {
 
                         {/* Social Links Row */}
                         <div className="flex justify-center md:justify-start gap-3 md:gap-4 mt-2 md:mt-4">
-                            <a href="https://github.com/ankanbera" target="_blank" className="p-3 md:p-4 bg-surface/50 border border-white/5 rounded-xl text-gray-400 hover:text-white hover:border-primary/50 hover:bg-primary/10 transition-all">
+                            <a href="https://github.com/ankanZtoH" target="_blank" className="p-3 md:p-4 bg-surface/50 border border-white/5 rounded-xl text-gray-400 hover:text-white hover:border-primary/50 hover:bg-primary/10 transition-all">
                                 <Github size={20} />
                             </a>
-                            <a href="https://linkedin.com/in/ankanbera" target="_blank" className="p-3 md:p-4 bg-surface/50 border border-white/5 rounded-xl text-gray-400 hover:text-blue-400 hover:border-blue-400/50 hover:bg-blue-400/10 transition-all">
+                            <a href="https://www.linkedin.com/in/ankanztoh/" target="_blank" className="p-3 md:p-4 bg-surface/50 border border-white/5 rounded-xl text-gray-400 hover:text-blue-400 hover:border-blue-400/50 hover:bg-blue-400/10 transition-all">
                                 <Linkedin size={20} />
                             </a>
-                            <a href="https://instagram.com/ankanbera" target="_blank" className="p-3 md:p-4 bg-surface/50 border border-white/5 rounded-xl text-gray-400 hover:text-pink-500 hover:border-pink-500/50 hover:bg-pink-500/10 transition-all">
+                            <a href="https://www.instagram.com/saanu.x_/?__pwa=1" target="_blank" className="p-3 md:p-4 bg-surface/50 border border-white/5 rounded-xl text-gray-400 hover:text-pink-500 hover:border-pink-500/50 hover:bg-pink-500/10 transition-all">
                                 <Instagram size={20} />
                             </a>
                         </div>

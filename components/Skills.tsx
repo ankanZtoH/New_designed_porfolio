@@ -4,13 +4,13 @@ import { Terminal, Cpu, Globe, Database, Code2, Layout, GitBranch, Server } from
 
 const skillsData = [
     {
-        category: "The Core Programming Languages",
+        category: "The Core Programming",
         description: "The fundamental tools I use to build logic and optimize performance.",
         items: [
             {
                 name: "Python",
                 icon: Terminal,
-                tags: ["Pandas", "NumPy", "AsyncIO"]
+                tags: ["Pandas", "NumPy", "Matplotlib"]
             },
             {
                 name: "C / C++",
@@ -20,7 +20,7 @@ const skillsData = [
             {
                 name: "SQL",
                 icon: Database,
-                tags: ["PostgreSQL", "Normalization"]
+                tags: ["PostgreSQL", "MongoDB", "MySQL"]
             }
         ]
     },
