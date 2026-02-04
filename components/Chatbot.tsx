@@ -101,7 +101,7 @@ const Chatbot = () => {
             {isOpen && (
                 <div className="mb-4 w-[350px] max-w-[calc(100vw-48px)] h-[550px] max-h-[70vh] bg-gray-900/95 backdrop-blur-md border border-white/10 rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-in fade-in slide-in-from-bottom-10 duration-300">
                     {/* Header */}
-                    <div className="p-4 bg-primary/10 border-b border-white/5 flex items-center justify-between">
+                    <div className="p-4 bg-primary/10 border-b border-white/5 flex items-center justify-between ">
                         <div className="flex items-center gap-3">
                             <div className="relative w-10 h-10 rounded-full overflow-hidden border border-primary/30">
                                 <Image
@@ -203,7 +203,7 @@ const Chatbot = () => {
 
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="relative p-0 w-14 h-14 bg-dark rounded-full shadow-[0_0_20px_rgba(102,252,241,0.3)] hover:shadow-[0_0_30px_rgba(102,252,241,0.5)] hover:scale-110 transition-all duration-300 z-[100] overflow-hidden border-2 border-primary"
+                    className="relative p-0 w-14 h-14 bg-dark rounded-full shadow-[0_0_20px_rgba(102,252,241,0.3)] hover:shadow-[0_0_30px_rgba(102,252,241,0.5)] hover:scale-110 transition-all duration-300 z-[100] overflow-hidden border-2 border-primary cursor-pointer"
                 >
                     <Image
                         src="/chatbot-logo.png"

@@ -10,7 +10,7 @@ const projects = [
         tags: ["Python", "LangChain", "OpenAI", "SQL"],
         date: "Nov 2025 - Dec 2025",
         link: "#",
-        github: "#"
+        github: "https://github.com/ankanZtoH/-AI-Powered-SQL-Chatbot-for-Easy-Data-Access.git"
     },
     {
         title: "Synthetic Defect Image Generation",
@@ -26,7 +26,7 @@ const projects = [
         tags: ["Python", "Scikit-Learn", "Pandas", "ML"],
         date: "2024",
         link: "#",
-        github: "#"
+        github: "https://github.com/ankanZtoH/Credit-Risk-Modelling-Through-Machine-Learning-.git"
     }
 ];
 
@@ -61,12 +61,24 @@ const Projects = () => {
                                 </div>
 
                                 <div className="flex gap-4 mt-auto">
-                                    <Link href={project.github} className="flex-1 py-2.5 rounded-lg bg-white/5 text-white text-sm font-medium hover:bg-white/10 flex items-center justify-center gap-2 transition-all">
-                                        <Github size={16} /> Code
-                                    </Link>
-                                    <Link href={project.link} className="flex-1 py-2.5 rounded-lg bg-primary text-dark text-sm font-bold hover:bg-primary/90 flex items-center justify-center gap-2 transition-all shadow-lg shadow-primary/20">
-                                        <ExternalLink size={16} /> Demo
-                                    </Link>
+                                    {project.github && project.github !== '#' ? (
+                                        <Link href={project.github} className="flex-1 py-2.5 rounded-lg bg-white/5 text-white text-sm font-medium hover:bg-white/10 flex items-center justify-center gap-2 transition-all">
+                                            <Github size={16} /> Code
+                                        </Link>
+                                    ) : (
+                                        <button disabled className="flex-1 py-2.5 rounded-lg bg-white/5 text-gray-500 text-sm font-medium flex items-center justify-center gap-2 cursor-not-allowed opacity-50 transition-all">
+                                            <Github size={16} /> Code
+                                        </button>
+                                    )}
+                                    {project.link && project.link !== '#' ? (
+                                        <Link href={project.link} className="flex-1 py-2.5 rounded-lg bg-primary text-dark text-sm font-bold hover:bg-primary/90 flex items-center justify-center gap-2 transition-all shadow-lg shadow-primary/20">
+                                            <ExternalLink size={16} /> Demo
+                                        </Link>
+                                    ) : (
+                                        <button disabled className="flex-1 py-2.5 rounded-lg bg-primary/20 text-gray-500/50 text-sm font-bold flex items-center justify-center gap-2 cursor-not-allowed opacity-50 transition-all">
+                                            <ExternalLink size={16} /> Demo
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         </article>
