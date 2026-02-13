@@ -5,6 +5,14 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
     {
+        title: "Diabetes Risk Factor Assessment Web Application",
+        description: "Built a web-based diabetes risk assessment system to help users estimate their risk level based on lifestyle and clinical parameters. Designed an interactive frontend using Next.js and integrated a Django backend.",
+        tags: ["Next.js", "TypeScript", "Tailwind CSS", "Django", "SQLite"],
+        date: "2025",
+        link: "https://preceptron-diabetes-risk-factor-cal.vercel.app/",
+        github: "https://github.com/ankanZtoH/preceptron_diabetes_risk_factor.git"
+    },
+    {
         title: "AI-Powered SQL Chatbot",
         description: "Developed an LLM-powered SQL chatbot allowing non-technical users to query databases in natural language. Enabled teams to access data without writing SQL.",
         tags: ["Python", "LangChain", "OpenAI", "SQL"],
